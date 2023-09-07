@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Newsletter Signup form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="newsletter signup form.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap');
+          </style>
+    </head>
+    <body>
+    
+        <div id="News-container">
+            <div id="form-container">
+                <div class="form">
+                    <h1 style="text-align: center; font-size: 30    px;">Stay updated!</h1>
+
+
+                    <div class="form-text">
+                        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                    </div>
+
+
+                    <div class="form-list">
+                        <ul>
+                            <li>Product discovery and building what matters</li>
+                            <li>Measuring to ensure updates are a success</li>
+                            <li>And much more!</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="main-form">
+                       <p style="font-size: 10px; font-weight: bold;">Email address <span style="float: right; color: rgb(247, 27, 27);" id="result"></span></p>
+                       <input id="mail-input" type="email" placeholder="email@company.com" required/>
+                    </div>
+                
+
+
+                <div class="Submit-btn" onclick="validate()" style="color: white; cursor: pointer;">
+                    Subscribe to monthly newsletter
+                </div>
+                
+
+                </div>
+            </div>
+
+            <!--inserting form image-->
+            <div id="form-img">
+                <img src="../Newsletter signup form/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg" class="img-1">
+                <img src="../Newsletter signup form/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg" class="img-2">
+            </div>
+
+        </div>
+
+
+
+
+
+        <!--success page-->
+        <div id="success-msg">
+            
+            <div class="success-content">
+                <img src="../Newsletter signup form/newsletter-sign-up-with-success-message-main/assets/images/icon-success.svg" style="width: 50px; height: 40px;">
+                
+                <div class="appreciation">
+                    <h1> Thanks for subscribing! </h1>
+                </div>
+
+                <div class="text">
+                    <p>A confirmation email has been sent to <span id="user" style="font-weight: bold;"></span> Please open it and click the button inside to confirm your subsciption.</p>
+                </div>
+
+                <button type="button" id="succ-btn"> Dismiss message</button>
+            </div>
+
+        <script src="newsletter signup form.js"></script>
+    </body>
+</html>

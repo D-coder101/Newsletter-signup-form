@@ -1,0 +1,198 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(234, 29%, 20%);
+    font-family: 'Roboto', sans-serif;
+}
+#News-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    top: 120px;
+    margin: 0 auto;
+    width: 48%;
+    height: 400px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px
+}
+.form {
+    color: hsl(234, 29%, 20%);
+    position: relative;
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+    background-color: white;
+    border: none;
+}
+.form-text {
+    top: 10px;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 12px;
+}
+.form-list {
+    top: 15px;
+    font-size: 12px;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.form-list > ul > li {
+    list-style-position: inside;
+    list-style-type: none;
+}
+ul li {
+    padding-left: 10%;
+    background-image: url("./newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+    margin: 2px;
+    line-height: 18px;
+}
+.main-form {
+    position: relative;
+    top: 40px;
+    width: 90%;
+    margin: 0 auto;
+}
+.main-form > input {
+    padding: 5px;
+    margin-top: 3px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 1px 1px lightgray;
+    width: 100%;
+}
+.Submit-btn {
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    top: 60px;
+    width: 90%;
+    height: 35px;
+    background-color: hsl(234, 29%, 20%);
+}
+#form-container::after {
+    clear: both;
+    content: " ";
+    display: block;
+}
+#form-container {
+    width: 60%;
+    border-radius: 25px;
+}
+#form-img::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#form-img {
+    position: relative;
+}
+#form-img > img {
+    border-radius: 20px;
+    float: right;
+    height: 100%;
+    max-width: 100%;
+}
+.img-2 {
+    display: none;
+}
+
+
+
+/*Styling Success state*/
+#success-msg {
+    position: relative;
+    margin: 0 auto;
+    top: 150px;
+    width: 320px;
+    border-radius: 20px;
+    background-color: white;
+    height: 350px;
+    padding-top: 20px;
+    color: hsl(234, 29%, 20%);
+    display: none;
+}
+.success-content {
+    position: relative;
+    padding: 2px;
+    margin: 0 auto;
+    width: 80%;
+    height: 90%;
+}
+.appreciation {
+    margin-top: 15px;
+    font-size: 19px;
+}
+.text {
+    margin-top: 10px;
+    font-size: 12px;
+}
+#succ-btn {
+    width: 100%;
+    margin-top: 38px;
+    border: none;
+    outline: none;
+    height: 35px;
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 5px;
+}
+@media only screen and (max-width: 700px){
+    #News-container {
+        padding: 0px;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        transform: rotate(360deg);
+        width: 100%;
+        height: 100%;   
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 0px;
+    }
+#form-container {
+    width: 100%;
+    height: 80%;
+}
+.img-1 {
+    display: none;
+}
+.img-2 {
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+    display: block;
+}
+.form-text, .form-list {
+    font-size: 16px;
+}
+}
+@media only screen and (min-width: 760px) and (max-width:1024px){
+    #News-container {
+        top: 200px;
+        width: 80%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;  
+        height: 400px;
+    }
+}
